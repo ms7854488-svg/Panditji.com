@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="toast" class="toast" aria-live="polite"></div>
+
     <header class="topbar">
       <div class="container nav-wrap">
         <div class="brand">
@@ -30,6 +32,7 @@
         <nav class="main-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#daily-insights">Daily Insights</a>
           <a href="#areas">Service Areas</a>
           <a href="#reviews">Reviews</a>
           <a href="#contact">Contact</a>
@@ -105,6 +108,43 @@
           <div>
             <strong>Online</strong>
             <span>Appointments available</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="daily-insights" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Daily spiritual guidance</p>
+            <h2>सकारात्मक विचार • शुभ समय • दैनिक प्रेरणा</h2>
+          </div>
+
+          <div class="daily-insights-grid">
+            <article class="insight-card quote-card">
+              <div class="insight-icon">🌼</div>
+              <p class="mini-label">आज का विचार</p>
+              <blockquote id="daily-quote">
+                “कर्म करो, फल की चिंता न करो; मन शुद्ध रखो, प्रभु का स्मरण करो।”
+              </blockquote>
+            </article>
+
+            <article class="insight-card muhurat-card">
+              <div class="insight-icon">🕉️</div>
+              <p class="mini-label">आज का शुभ समय</p>
+              <h3 id="muhurat-title">शुभ मुहूर्त</h3>
+              <div class="muhurat-time" id="muhurat-time">6:15 AM - 7:25 AM</div>
+              <p id="muhurat-detail">शुभ कार्य: पूजा, आरंभ, खरीदारी, हवन, नमस्कार</p>
+            </article>
+
+            <article class="insight-card alert-card">
+              <div class="insight-icon">📣</div>
+              <p class="mini-label">आज का संदेश</p>
+              <h3>Subh Labh Din</h3>
+              <p id="day-status">आज का दिन सकारात्मक ऊर्जा, पूजा और परिवारिक संतुलन के लिए शुभ है।</p>
+              <button id="alert-button" class="btn btn-primary small-btn" type="button">
+                Enable Daily Alert
+              </button>
+            </article>
           </div>
         </div>
       </section>
@@ -290,15 +330,15 @@
 
           <div class="testimonial-grid">
             <blockquote>
-              "The puja was conducted with devotion and care. We felt guided and supported throughout."
+              “The puja was conducted with devotion and care. We felt guided and supported throughout.”
               <footer>— Sushma & Ravi</footer>
             </blockquote>
             <blockquote>
-              "Very respectful and knowledgeable. The ritual and guidance were truly meaningful."
+              “Very respectful and knowledgeable. The ritual and guidance were truly meaningful.”
               <footer>— Amit Sharma</footer>
             </blockquote>
             <blockquote>
-              "Excellent spiritual guidance for our family ceremony. We highly recommend their services."
+              “Excellent spiritual guidance for our family ceremony. We highly recommend their services.”
               <footer>— Priya Verma</footer>
             </blockquote>
           </div>
