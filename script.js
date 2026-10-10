@@ -91,9 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedState = localStorage.getItem("dailySpiritualAlertEnabled") === "true";
     toggleButton.textContent = savedState ? "Daily Alerts Enabled" : "Enable Daily Alert";
     toggleButton.setAttribute("aria-pressed", String(savedState));
-    if (savedState) {
-      toggleButton.classList.add("alert-enabled");
-    }
 
     toggleButton.addEventListener("click", () => {
       const enabled = localStorage.getItem("dailySpiritualAlertEnabled") === "true";
@@ -102,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("dailySpiritualAlertEnabled", String(nextState));
       toggleButton.textContent = nextState ? "Daily Alerts Enabled" : "Enable Daily Alert";
       toggleButton.setAttribute("aria-pressed", String(nextState));
-      toggleButton.classList.toggle("alert-enabled", nextState);
 
       showToast(nextState ? "Daily spiritual alerts enabled." : "Daily alerts disabled.");
 
